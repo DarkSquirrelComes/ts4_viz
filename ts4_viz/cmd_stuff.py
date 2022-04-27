@@ -102,19 +102,19 @@ class MsgVizualizerShell(cmd.Cmd):
         )
         gs.setup(_data=self._peek_data())
 
-    def do_exclude_nickname(self, arg):
-        arg = arg.strip()
-        self._exclude_msgs_by_predicate(
-            lambda msg: msg['name'] != arg
-        )
-        gs.setup(_data=self._peek_data())
+    # def do_exclude_nickname(self, arg):
+    #     arg = arg.strip()
+    #     self._exclude_msgs_by_predicate(
+    #         lambda msg: msg['name'] != arg
+    #     )
+    #     gs.setup(_data=self._peek_data())
 
-    def do_exclude_all_except_address_and_its_neighbours(self, arg):
-        arg = arg.strip()
-        self._exclude_msgs_by_predicate(
-            lambda msg: msg['name'] != arg
-        )
-        gs.setup(_data=self._peek_data())
+    # def do_exclude_all_except_address_and_its_neighbours(self, arg):
+    #     arg = arg.strip()
+    #     self._exclude_msgs_by_predicate(
+    #         lambda msg: msg['name'] != arg
+    #     )
+    #     gs.setup(_data=self._peek_data())
 
 
     # ---- VIEW SETTINGS ----#
