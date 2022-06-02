@@ -3,9 +3,9 @@ import json
 import sys
 import os
 
-from ts4_viz.graphviz_stuff import setup
+from graphviz_stuff import setup
 
-from ts4_viz.cmd_stuff import MsgVizualizerShell
+from cmd_stuff import MsgVizualizerShell
 
 
 def create_arg_parser():

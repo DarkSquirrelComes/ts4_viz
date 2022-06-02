@@ -1,7 +1,7 @@
 import cmd
 from copy import deepcopy
 
-import ts4_viz.graphviz_stuff as gs
+import graphviz_stuff as gs
 
 
 class MsgVizualizerShell(cmd.Cmd):
